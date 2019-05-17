@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "358478071310",
+    "firebase_url": "https://flutterdb-229b8.firebaseio.com",
+    "project_id": "flutterdb-229b8",
+    "storage_bucket": "flutterdb-229b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358478071310:android:0eea4e2d1cb33f6c",
+        "android_client_info": {
+          "package_name": "com.ritika.amoled"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358478071310-dhve8dd9joq4r82q0se74efnj8ucvmtm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb_GdvuDNrRcFtwaaLcUXNq6GJYeuscmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358478071310-dhve8dd9joq4r82q0se74efnj8ucvmtm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "358478071310-kp61u5pn25svu237a6fq2v9gq0flji2q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ritika.amoled"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
