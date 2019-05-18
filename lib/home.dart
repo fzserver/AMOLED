@@ -1,6 +1,9 @@
 import 'dart:async';
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+
+import 'img.dart';
 
 class AMOLEDHome extends StatefulWidget {
   @override
@@ -56,10 +59,10 @@ Widget wallList(BuildContext ctx, List<DocumentSnapshot> images) =>
             childAspectRatio: .64,
             children: List.generate(
               images.length,
-              (index) => Image(
+              (index) => InkWell(onTap: () => Navigator.push(ctx, MaterialPageRoute(builder: (BuildContext context) => Image(image: NetworkImage(images[index].data['url'])))) , child: Image(
                     image: NetworkImage(images[index].data['url']),
                     fit: BoxFit.cover,
-                  ),
+                  ),),
             ),
           )
         : Center();
