@@ -14,18 +14,20 @@ class _AMOLEDHomeState extends State<AMOLEDHome> {
           title: Text('AMOLED'),
           backgroundColor: Colors.black,
         ),
-        backgroundColor: Colors.red,
+        // backgroundColor: Colors.red,
         body: wallList(context, wallpapersList),
       );
 
   @override
   void initState() {
+    firestore();
     super.initState();
   }
 
   @override
   void dispose() {
-    super.dispose();
+    subscription?.cancel();
+    super.dispose();      
   }
 
   StreamSubscription<QuerySnapshot> subscription;
