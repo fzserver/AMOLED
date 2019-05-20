@@ -1,9 +1,9 @@
 import 'dart:async';
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import 'img.dart';
+
 
 class AMOLEDHome extends StatefulWidget {
   @override
@@ -16,7 +16,9 @@ class _AMOLEDHomeState extends State<AMOLEDHome> {
         appBar: AppBar(
           title: Text('AMOLED'),
           backgroundColor: Colors.black,
+          
         ),
+        
         // backgroundColor: Colors.red,
         body: wallList(context, wallpapersList),
       );
@@ -59,7 +61,7 @@ Widget wallList(BuildContext ctx, List<DocumentSnapshot> images) =>
             childAspectRatio: .64,
             children: List.generate(
               images.length,
-              (index) => InkWell(onTap: () => Navigator.push(ctx, MaterialPageRoute(builder: (BuildContext context) => Image(image: NetworkImage(images[index].data['url'])))) , child: Image(
+              (index) => InkWell(onTap: () => Navigator.push(ctx, MaterialPageRoute(builder: (BuildContext context) => Img(images[index].data['url']))) , child: Image(
                     image: NetworkImage(images[index].data['url']),
                     fit: BoxFit.cover,
                   ),),
